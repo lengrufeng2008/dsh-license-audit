@@ -1,0 +1,4 @@
+- insert:
+    - id: license-audit
+      name: dsh-license-audit
+      config: {}
