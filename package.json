@@ -1,0 +1,15 @@
+{
+  "name": "dsh-license-audit",
+  "version": "0.1.0",
+  "description": "Static license inventory for a DSH plugin package and its installed dependencies; flags strong copyleft and unknown licenses. Not legal advice.",
+  "type": "module",
+  "bin": { "dsh-license-audit": "bin/dsh-license-audit.mjs" },
+  "exports": { ".": "./plugin/index.js", "./audit": "./src/audit.mjs", "./plugin": "./plugin/index.js", "./icon": "./icon.svg" },
+  "files": ["bin", "src", "plugin", "skills", "icon.svg", "README.md", "NOTICE.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./plugin/cordis.patch.yml" } },
+  "engines": { "node": ">=20" },
+  "keywords": ["dsh", "deepseek-harness", "license", "audit", "compliance"],
+  "license": "MIT",
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "repository": { "type": "git", "url": "https://github.com/lengrufeng2008/dsh-license-audit" }
+}
